@@ -1,4 +1,4 @@
-# Voice Agent Patient Registration System
+# Voice AI Patient Registration System
 
 A voice-powered patient registration system that allows users to provide their information through a natural phone conversation. The AI agent collects and confirms patient details, then stores them through a FastAPI backend.
 
@@ -19,7 +19,7 @@ SQLite Database
 ## Tech Stack
 
 * **Vapi** — Voice AI, telephony, STT & TTS
-* **FastAPI** — Backend REST API
+* **FastAPI** — REST API and backend
 * **Python** — Backend development
 * **SQLite** — Persistent patient data storage
 * **ngrok** — Public API tunneling
@@ -27,12 +27,12 @@ SQLite Database
 ## Features
 
 * Natural conversational patient registration
-* Collects patient demographic information
-* Validates user input
-* Confirms information before saving
-* Persistent patient records
-* REST API for managing patient data
-* Voice AI → FastAPI integration
+* Patient demographic data collection
+* Input validation
+* Confirmation before saving
+* Persistent SQLite storage
+* REST API for patient records
+* Vapi → FastAPI integration
 * Error handling for invalid inputs and failed requests
 
 ## API Endpoints
@@ -47,26 +47,19 @@ SQLite Database
 
 ## Setup
 
-### 1. Clone the repository
-
-```bash
-git clone <repository-url>
-cd <project-folder>
-```
-
-### 2. Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Start the FastAPI server
+### Run the FastAPI server
 
 ```bash
 uvicorn main:app --reload
 ```
 
-### 5. Start ngrok
+### Start ngrok
 
 ```bash
 ngrok http 8000
@@ -76,21 +69,22 @@ Use the generated HTTPS URL when configuring the Vapi tools/webhooks.
 
 ## Vapi Workflow
 
-The voice agent:
-
 1. Greets the caller.
-2. Collects the required patient information.
+2. Collects patient information.
 3. Handles corrections and invalid inputs.
-4. Reads the information back for confirmation.
+4. Confirms the collected information.
 5. Sends the confirmed data to the FastAPI API.
-6. Confirms successful registration to the caller.
+6. FastAPI stores the patient in SQLite.
+7. The agent confirms successful registration.
 
 ## API Documentation
 
-FastAPI automatically provides interactive API documentation:
+Interactive API documentation is available at:
 
 ```text
 http://localhost:8000/docs
 ```
+
+
 
 
