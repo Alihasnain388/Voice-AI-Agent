@@ -102,24 +102,4 @@ FastAPI automatically provides interactive API documentation:
 http://localhost:8000/docs
 ```
 
-## Environment Variables
 
-All API keys and sensitive configuration are stored using environment variables rather than being hardcoded in the source code.
-
-## Limitations
-
-* ngrok is currently used for exposing the local API.
-* Authentication and authorization are not implemented.
-* The project is intended as a demonstration and should not be used with real patient/healthcare data.
-* Production deployment, monitoring, and advanced security would be required for a real-world implementation.
-
-## Future Improvements
-
-* Cloud deployment
-* Authentication & authorization
-* Automated API tests
-* Duplicate patient detection
-* Call transcripts and summaries
-* Multi-language support
-* Appointment scheduling
-* Monitoring and analytics
