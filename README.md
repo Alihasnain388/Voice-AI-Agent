@@ -11,7 +11,7 @@ Vapi Voice AI Agent
    ↓
 FastAPI REST API
    ↓
-Database
+SQLite Database
 ```
 
 **ngrok** is used to expose the local FastAPI server through a public HTTPS endpoint for Vapi integration.
@@ -21,7 +21,7 @@ Database
 * **Vapi** — Voice AI, telephony, STT & TTS
 * **FastAPI** — Backend REST API
 * **Python** — Backend development
-* **Database** — Persistent patient data storage
+* **SQLite** — Persistent patient data storage
 * **ngrok** — Public API tunneling
 
 ## Features
@@ -58,15 +58,6 @@ cd <project-folder>
 
 ```bash
 pip install -r requirements.txt
-```
-
-### 3. Configure environment variables
-
-Create a `.env` file and add the required API keys and configuration.
-
-```env
-VAPI_API_KEY=your_api_key
-# Add other required variables
 ```
 
 ### 4. Start the FastAPI server
