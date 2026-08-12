@@ -1,4 +1,4 @@
-# Voice AI Patient Registration System
+# Voice Agent Patient Registration System
 
 A voice-powered patient registration system that allows users to provide their information through a natural phone conversation. The AI agent collects and confirms patient details, then stores them through a FastAPI backend.
 
