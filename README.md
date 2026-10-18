@@ -77,13 +77,7 @@ Use the generated HTTPS URL when configuring the Vapi tools/webhooks.
 6. FastAPI stores the patient in SQLite.
 7. The agent confirms successful registration.
 
-## API Documentation
 
-Interactive API documentation is available at:
-
-```text
-http://localhost:8000/docs
-```
 
 
 
